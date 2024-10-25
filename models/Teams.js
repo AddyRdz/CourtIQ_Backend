@@ -3,13 +3,13 @@ import mongoose, { mongo } from "mongoose";
 const teamSchema = new mongoose.Schema({
     name: {
         type: String,
-        minLength: 5,
-        maxLength: 20,
+        minLength: 2,
+        maxLength: 40,
     },
     location: {
         type: String,
         minLength: 2,
-        maxLength: 20,
+        maxLength: 25,
     },
     championships: {
         type: Number,

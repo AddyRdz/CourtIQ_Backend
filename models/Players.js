@@ -4,12 +4,12 @@ const playerSchema = new mongoose.Schema({
     name: {
         type: String,
         minLength: 3,
-        maxLength: 20
+        maxLength: 40
     }, 
     team: {
         type: String,
-        minLength: 5,
-        maxLength: 20
+        minLength: 3,
+        maxLength: 25
     },
     rating: {
         type: Number,
