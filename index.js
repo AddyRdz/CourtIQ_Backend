@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import morgan from "morgan";
 import playersRouter from "./routes/players.js";
 import teamsRouter from "./routes/teams.js";
+import cors from 'cors';
 
 dotenv.config();
 const app = express();
@@ -24,6 +25,7 @@ app.use(logger);
 app._router.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+app.use(cors());
 
 // Routes
 app.get("/", (req, res) => {
