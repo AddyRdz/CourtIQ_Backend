@@ -15,16 +15,16 @@ const playerSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    // salary: {
-    //     type: Number,
-    //     minLength: 5,
-    //     maxLength: 25,
-    // },
-    // yearsActive: {
-    //     type: Number,
-    //     minLength: 1,
-    //     maxLength: 3,
-    // },
+    salary: {
+        type: Number,
+        minLength: 5,
+        maxLength: 25,
+    },
+    yearsActive: {
+        type: Number,
+        minLength: 1,
+        maxLength: 3,
+    },
     comment: {
         type: String,
         minLength: 5,
