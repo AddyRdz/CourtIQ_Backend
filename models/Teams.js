@@ -9,7 +9,7 @@ const teamSchema = new mongoose.Schema({
     location: {
         type: String,
         minLength: 2,
-        maxLength: 25,
+        maxLength: 50,
     },
     championships: {
         type: Number,
